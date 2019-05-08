@@ -16,7 +16,7 @@
 @endsection
 
 @section('content')
-    <div class="container">
+    <div class="container">hfkjsdhkfjhsdkjfhsdjkfhskdjfhsjkdhfksjdhfkjsdhfkjsdfh
         @if(config('laravelusers.enablePackageBootstapAlerts'))
             <div class="row">
                 <div class="col-lg-10 offset-lg-1">
