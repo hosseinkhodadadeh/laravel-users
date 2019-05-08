@@ -16,12 +16,12 @@
     },
     "autoload": {
         "psr-4": {
-            "jeremykenedy\\laravelusers\\": "src/"
+            "hosseinkhodadadeh\\laravelusers\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "jeremykenedy\\laravelusers\\Test\\": "tests/"
+            "hosseinkhodadadeh\\laravelusers\\Test\\": "tests/"
         }
     },
     "require-dev": {
@@ -33,7 +33,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "jeremykenedy\\laravelusers\\LaravelUsersServiceProvider"
+                "hosseinkhodadadeh\\laravelusers\\LaravelUsersServiceProvider"
             ]
         }
     },
