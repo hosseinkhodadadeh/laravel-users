@@ -1,10 +1,10 @@
-# Laravel-Users | A Laravel Users CRUD Management [Package](https://packagist.org/packages/jeremykenedy/laravel-users)
+# Laravel-Users | A Laravel Users CRUD Management [Package](https://packagist.org/packages/hosseinkhodadadeh/laravel-users)
 
-[![Latest Stable Version](https://poser.pugx.org/jeremykenedy/laravel-users/v/stable.svg)](https://packagist.org/packages/jeremykenedy/laravel-users)
-[![Total Downloads](https://poser.pugx.org/jeremykenedy/laravel-users/d/total.svg)](https://packagist.org/packages/jeremykenedy/laravel-users)
-[![Travis-CI Build](https://travis-ci.org/jeremykenedy/laravel-users.svg?branch=master)](https://travis-ci.org/jeremykenedy/laravel-users)
+[![Latest Stable Version](https://poser.pugx.org/hosseinkhodadadeh/laravel-users/v/stable.svg)](https://packagist.org/packages/hosseinkhodadadeh/laravel-users)
+[![Total Downloads](https://poser.pugx.org/hosseinkhodadadeh/laravel-users/d/total.svg)](https://packagist.org/packages/hosseinkhodadadeh/laravel-users)
+[![Travis-CI Build](https://travis-ci.org/hosseinkhodadadeh/laravel-users.svg?branch=master)](https://travis-ci.org/hosseinkhodadadeh/laravel-users)
 [![StyleCI](https://styleci.io/repos/83162309/shield?branch=master)](https://styleci.io/repos/83162309)
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/jeremykenedy/laravel-users/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/jeremykenedy/laravel-users/?branch=master)
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/hosseinkhodadadeh/laravel-users/badges/quality-score.png?b=master)](https://scrutinizer-ci.com/g/hosseinkhodadadeh/laravel-users/?branch=master)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 <a href="https://www.patreon.com/bePatron?u=10119959" title="Become a Patreon">
     <img src="https://c5.patreon.com/external/logo/become_a_patron_button.png" alt="Become a Patreon" width="85px" > 
@@ -23,12 +23,12 @@
 - [License](#license)
 
 ### About
-A Users Management CRUD [Package](https://packagist.org/packages/jeremykenedy/laravel-users) that includes all necessary routes, views, models, and controllers for a user management dashboard and associated pages for managing Laravels built in user scaffolding.
+A Users Management CRUD [Package](https://packagist.org/packages/hosseinkhodadadeh/laravel-users) that includes all necessary routes, views, models, and controllers for a user management dashboard and associated pages for managing Laravels built in user scaffolding.
 Easily start creating, updating, editing, and deleting users in minutes with minimal setup required; Easily search all users, helpful for large user bases.
 Built for Laravel 5.2, 5.3, 5.4, 5.5, 5.6, 5.7, and 5.8. This package is easily configurable and customizable.
 
 Laravel users can work out the box with or without the following roles packages:
-* [jeremykenedy/laravel-roles](https://github.com/jeremykenedy/laravel-roles)
+* [hosseinkhodadadeh/laravel-roles](https://github.com/hosseinkhodadadeh/laravel-roles)
 * [spatie/laravel-permission](https://github.com/spatie/laravel-permission)
 * [Zizaco/entrust](https://github.com/Zizaco/entrust)
 * [romanbican/roles](https://github.com/romanbican/roles)
@@ -39,7 +39,7 @@ Laravel users can work out the box with or without the following roles packages:
 | :------------ |
 |Full CRUD of Laravel Users|
 |Works with built in [auth scaffolding](https://laravel.com/docs/5.7/authentication)|
-|Works with various [Roles/ACL Packages](https://github.com/jeremykenedy/laravel-roles)|
+|Works with various [Roles/ACL Packages](https://github.com/hosseinkhodadadeh/laravel-roles)|
 |Uses [Language localization](https://laravel.com/docs/5.7/localization) File System|
 |Uses [font awesome](https://fontawesome.com/icons), cdn can be optionally called in config|
 |Can use built in [pagination](https://laravel.com/docs/5.7/pagination) and/or [datatables.js](https://datatables.net/)|
@@ -56,30 +56,30 @@ Laravel users can work out the box with or without the following roles packages:
     Laravel 5.6, 5.7, and 5.8+ use:
 
     ```
-        composer require jeremykenedy/laravel-users
+        composer require hosseinkhodadadeh/laravel-users
     ```
 
     Laravel 5.5 use:
 
     ```
-        composer require jeremykenedy/laravel-users:2.0.2
+        composer require hosseinkhodadadeh/laravel-users:2.0.2
     ```
 
     Laravel 5.4 use:
 
     ```
-        composer require jeremykenedy/laravel-users:1.4.0
+        composer require hosseinkhodadadeh/laravel-users:1.4.0
     ```
 
     Laravel 5.3 use:
 
     ```
-        composer require jeremykenedy/laravel-users:1.3.0
+        composer require hosseinkhodadadeh/laravel-users:1.3.0
     ```
 
     Laravel 5.2 use:
     ```
-        composer require jeremykenedy/laravel-users:1.2.0
+        composer require hosseinkhodadadeh/laravel-users:1.2.0
     ```
 
 2. Register Package
@@ -91,7 +91,7 @@ Register the package with laravel in `config/app.php` under `providers` with the
 
    ```
       Collective\Html\HtmlServiceProvider::class,
-      jeremykenedy\laravelusers\LaravelUsersServiceProvider::class,
+      hosseinkhodadadeh\laravelusers\LaravelUsersServiceProvider::class,
    ```
 
 3. Register the dependencies aliases
@@ -113,7 +113,7 @@ In `config/app.php` section under `aliases` with the following:
     ```
 
 ### Configuration
-Laravel Users can be configured directly in [`/config/laravelusers.php`](https://github.com/jeremykenedy/laravel-users/blob/master/src/config/laravelusers.php) once you publish the assets.
+Laravel Users can be configured directly in [`/config/laravelusers.php`](https://github.com/hosseinkhodadadeh/laravel-users/blob/master/src/config/laravelusers.php) once you publish the assets.
 
 ```php
     /*
@@ -135,7 +135,7 @@ Laravel Users can be configured directly in [`/config/laravelusers.php`](https:/
      | Enable Roles Middlware on the usability of this package.
      | This requires the middleware from the roles package to be registered in `App\Http\Kernel.php`
      | An Example: of roles middleware entry in protected `$routeMiddleware` array would be:
-     | 'role' => \jeremykenedy\LaravelRoles\Middleware\VerifyRole::class,
+     | 'role' => \hosseinkhodadadeh\LaravelRoles\Middleware\VerifyRole::class,
      */
 
     'rolesMiddlwareEnabled'         => true,
@@ -144,7 +144,7 @@ Laravel Users can be configured directly in [`/config/laravelusers.php`](https:/
     'rolesMiddlware'                => 'role:admin',
 
     // Optional Role Model
-    'roleModel'                     => 'jeremykenedy\LaravelRoles\Models\Role',
+    'roleModel'                     => 'hosseinkhodadadeh\LaravelRoles\Models\Role',
 
     // Enable Soft Deletes - Not yet setup - on the roadmap.
     'softDeletedEnabled'            => false,
@@ -210,13 +210,13 @@ Laravel Users can be configured directly in [`/config/laravelusers.php`](https:/
 ###### Routes In-depth
 | Method    | URI                    | Name             | Action                                                                            | Middleware  |
 | :-------- | :--------------------- | :--------------- | :-------------------------------------------------------------------------------- | :---------- |
-| GET/HEAD  | users                  | users            | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@index    | web,auth    |
-| POST      | users                  | users.store      | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@store    | web,auth    |
-| GET/HEAD  | users/create           | users.create     | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@create   | web,auth    |
-| GET/HEAD  | users/{user}           | users.show       | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@show     | web,auth    |
-| DELETE    | users/{user}           | user.destroy     | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@destroy  | web,auth    |
-| PUT/PATCH | users/{user}           | users.update     | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@update   | web,auth    |
-| GET/HEAD  | users/{user}/edit      | users.edit       | jeremykenedy\laravelusers\app\Http\Controllers\UsersManagementController@edit     | web,auth    |
+| GET/HEAD  | users                  | users            | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@index    | web,auth    |
+| POST      | users                  | users.store      | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@store    | web,auth    |
+| GET/HEAD  | users/create           | users.create     | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@create   | web,auth    |
+| GET/HEAD  | users/{user}           | users.show       | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@show     | web,auth    |
+| DELETE    | users/{user}           | user.destroy     | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@destroy  | web,auth    |
+| PUT/PATCH | users/{user}           | users.update     | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@update   | web,auth    |
+| GET/HEAD  | users/{user}/edit      | users.edit       | hosseinkhodadadeh\laravelusers\app\Http\Controllers\UsersManagementController@edit     | web,auth    |
 
 ### Required Packages
 (included in this package)
@@ -306,7 +306,7 @@ Before opening an issue there are a couple of considerations:
 * **Show that you have made an attempt** to *look into the issue*.
 * **Check** to see if the issue you are *reporting is a duplicate* of a previous reported issue.
 * **Following these instructions show me that you have tried.**
-* If you have a questions send me an email to jeremykenedy@gmail.com
+* If you have a questions send me an email to hosseinkhodadadeh@gmail.com
 * Need some help, I can do my best on Slack: https://opensourcehelpgroup.slack.com
 * Please be considerate that this is an open source project that I provide to the community for FREE when opening an issue. 
 

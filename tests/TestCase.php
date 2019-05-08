@@ -1,9 +1,9 @@
 <?php
 
-namespace jeremykenedy\laravelusers\Test;
+namespace hosseinkhodadadeh\laravelusers\Test;
 
-use jeremykenedy\laravelusers\LaravelUsersFacade;
-use jeremykenedy\laravelusers\LaravelUsersServiceProvider;
+use hosseinkhodadadeh\laravelusers\LaravelUsersFacade;
+use hosseinkhodadadeh\laravelusers\LaravelUsersServiceProvider;
 use Orchestra\Testbench\TestCase as OrchestraTestCase;
 
 class TestCase extends OrchestraTestCase
@@ -13,7 +13,7 @@ class TestCase extends OrchestraTestCase
      *
      * @param \Illuminate\Foundation\Application $app
      *
-     * @return jeremykenedy\laravelusers\LaravelUsersServiceProvider
+     * @return hosseinkhodadadeh\laravelusers\LaravelUsersServiceProvider
      */
     protected function getPackageProviders($app)
     {

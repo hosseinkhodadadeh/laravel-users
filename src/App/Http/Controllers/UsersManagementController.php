@@ -1,6 +1,6 @@
 <?php
 
-namespace jeremykenedy\laravelusers\App\Http\Controllers;
+namespace hosseinkhodadadeh\laravelusers\App\Http\Controllers;
 
 use App\Http\Controllers\Controller;
 use Auth;

@@ -21,7 +21,7 @@ return [
      | Enable Roles Middlware on the usability of this package.
      | This requires the middleware from the roles package to be registered in `App\Http\Kernel.php`
      | An Example: of roles middleware entry in protected `$routeMiddleware` array would be:
-     | 'role' => \jeremykenedy\LaravelRoles\Middleware\VerifyRole::class,
+     | 'role' => \hosseinkhodadadeh\LaravelRoles\Middleware\VerifyRole::class,
      */
 
     'rolesMiddlwareEnabled'         => true,
@@ -30,7 +30,7 @@ return [
     'rolesMiddlware'                => 'role:admin',
 
     // Optional Role Model
-    'roleModel'                     => 'jeremykenedy\LaravelRoles\Models\Role',
+    'roleModel'                     => 'hosseinkhodadadeh\LaravelRoles\Models\Role',
 
     // Enable Soft Deletes - Not yet setup - on the roadmap.
     'softDeletedEnabled'            => false,
