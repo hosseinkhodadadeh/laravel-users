@@ -1,13 +1,13 @@
 {
-    "name": "jeremykenedy/laravel-users",
+    "name": "hosseinkhodadadeh/laravel-users",
     "description": "Laravel Users Management CRUD Package",
     "keywords": ["laravel", "users", "management", "CRUD"],
     "license": "MIT",
     "type": "package",
     "authors": [
         {
-            "name": "jeremykenedy",
-            "email": "jeremykenedy@gmail.com"
+            "name": "Hossein Khodadadeh",
+            "email": "hosseinkhodadadeh@gmail.com"
         }
     ],
     "require": {
