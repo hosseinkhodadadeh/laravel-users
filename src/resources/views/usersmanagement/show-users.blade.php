@@ -1,19 +1,11 @@
-@extends(config('laravelusers.laravelUsersBladeExtended'))
+@extends('layouts.app')
+@extends('layouts.leftMenu')
+@extends('layouts.header')
+@extends('layouts.breadcrumbs')
+@extends('layouts.footer')
 
-@section('template_title')
-    {!! trans('laravelusers::laravelusers.showing-all-users') !!}
-@endsection
 
-@section('template_linked_css')
-    @if(config('laravelusers.enabledDatatablesJs'))
-        <link rel="stylesheet" type="text/css" href="{{ config('laravelusers.datatablesCssCDN') }}">
-    @endif
-    @if(config('laravelusers.fontAwesomeEnabled'))
-        <link rel="stylesheet" type="text/css" href="{{ config('laravelusers.fontAwesomeCdn') }}">
-    @endif
-    @include('laravelusers::partials.styles')
-    @include('laravelusers::partials.bs-visibility-css')
-@endsection
+
 
 @section('content')
     <div class="container">
@@ -135,6 +127,11 @@
                                             <td>
                                                 <a class="btn btn-sm btn-info btn-block" href="{{ URL::to('users/' . $user->id . '/edit') }}" data-toggle="tooltip" title="{!! trans('laravelusers::laravelusers.tooltips.edit') !!}">
                                                     {!! trans('laravelusers::laravelusers.buttons.edit') !!}
+                                                </a>
+                                            </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-info btn-block" href="{{ URL::to('users/' . $user->id . '/portfolios') }}" data-toggle="tooltip" title="{!! trans('Portfolios') !!}">
+                                                    {!! trans('Portfolios') !!}
                                                 </a>
                                             </td>
                                         </tr>
