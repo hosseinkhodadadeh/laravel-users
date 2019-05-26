@@ -134,6 +134,11 @@
                                                     {!! trans('Portfolios') !!}
                                                 </a>
                                             </td>
+                                            <td>
+                                                <a class="btn btn-sm btn-info btn-block" href="{{ URL::to('users/' . $user->id . '/rungs') }}" data-toggle="tooltip" title="Rungs">
+                                                    Rungs
+                                                </a>
+                                            </td>
                                         </tr>
                                     @endforeach
                                 </tbody>
